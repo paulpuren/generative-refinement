@@ -1,0 +1,41 @@
+The saved checkpoints are located at specific paths as below.
+
+------------------------------------------
+NSKT
+------------------------------------------
+- UNet:
+- Super Slomo:
+- EDEN:
+- FLEX:
+    - small:
+    - medium:
+    - big: 
+
+**********************************************************
+
+------------------------------------------
+Shanghai Radar data
+------------------------------------------
+- UNet: "checkpoints/checkpoint_Model_UNet_Data_shanghai_Optim_lion_lr1e-05_epoch100_stride64_T20_TfixedFalse.pt"
+
+- Super Slomo:
+
+- EDEN:
+- FLEX:
+    - small:
+    - medium:
+    - big: 
+
+**********************************************************
+
+------------------------------------------
+Sea Surface Temperature data
+------------------------------------------
+- UNet: "checkpoints/checkpoint_Model_UNet_Data_sea_temp_Optim_adam_lr0.0001_epoch30_stride64_T10_TfixedFalse.pt"
+
+- Super Slomo:
+- EDEN:
+- FLEX:
+    - small: "checkpoints/checkpoint_Model_FLEX_small_mlp2_Data_sea_temp_Optim_lion_lr1e-05_epoch50_stride64_T10_TfixedFalse.pt"
+    - medium:
+    - big: 
