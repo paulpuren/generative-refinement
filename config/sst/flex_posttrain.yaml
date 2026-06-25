@@ -1,0 +1,34 @@
+# Post-trained SST FLEX configuration.
+# This file tracks the fine-tuned SST run/checkpoint used for FLEX evaluation.
+# The produced checkpoint naming is the `Model_ft_FLEX_..._epoch100_...` variant
+# referenced below.
+#
+# Launch with:
+#   python train.py --config config/sst/flex_posttrain.yaml
+run_name: FLEX_posttrain
+data_name: sea_temp
+model: FLEX
+flex_model_size: small
+flex_mlp_ratio: 2
+use_scalar_film: true
+use_spatial_cond: true
+spatial_cond_scales: [32, 16]
+spatial_cond_mode: gated
+ddp_find_unused_parameters: true
+sampling_freq: 5
+validation_freq: 5
+optimizer: adam
+epochs: 100
+batch_size: 32
+learning_rate: 1.0e-4
+checkpoint_path: /pscratch/sd/p/puren93/puren/Interp-DM/checkpoints/checkpoint_Model_ft_FLEX_small_mlp2_Data_sea_temp_Optim_adam_cosine_lr0.0001_epoch100_patchsize128_stride32_T10_TfixedFalse_last.pt
+resume_training: true
+total_interp_steps_train: 10
+is_T_fixed: false
+patch_size: 128
+stride: 32
+scratch_dir: /global/cfs/projectdirs/m4633/puren/interp_dm/sea_temp/
+prediction_type: v
+sampler: ddim
+time_steps: 3
+base_width: 128

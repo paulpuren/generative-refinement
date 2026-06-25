@@ -1,0 +1,21 @@
+# Config for: python train.py --config config/nskt/unet.yaml
+run_name: UNet
+data_name: nskt
+model: UNet
+sampling_freq: 10
+optimizer: adam
+epochs: 300
+batch_size: 12
+learning_rate: 1.0e-4
+checkpoint_path: ''
+total_interp_steps_train: 20 # 16
+is_T_fixed: false
+patch_size: 128
+stride: 32
+scratch_dir: /global/cfs/cdirs/m4633/foundationmodel/nskt_tensor/
+prediction_type: v
+sampler: ddim
+time_steps: 3
+base_width: 128
+flex_model_size: small
+flex_mlp_ratio: 2

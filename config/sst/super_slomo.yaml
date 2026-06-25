@@ -1,0 +1,18 @@
+# Config for: python train_super_slomo.py --config config/sst/super_slomo.yaml
+run_name: SuperSloMo
+data_name: sea_temp
+model: SuperSloMo
+sampling_freq: 5
+optimizer: adam
+epochs: 200
+batch_size: 32
+learning_rate: 1.0e-4
+checkpoint_path: ''
+total_interp_steps_train: 10
+is_T_fixed: true
+patch_size: 128
+stride: 32
+scratch_dir: /global/cfs/projectdirs/m4633/puren/interp_dm/sea_temp/
+prediction_type: v
+sampler: ddim
+base_width: 128

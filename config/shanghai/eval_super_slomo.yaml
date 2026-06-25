@@ -1,0 +1,14 @@
+# Config for: python eval_super_slomo.py --config config/shanghai/eval_super_slomo.yaml
+data_name: shanghai
+model: SuperSloMo
+batch_size: 32
+patch_size: 128
+stride: 32
+optimizer: adam
+epochs: 400
+learning_rate: 1.0e-4
+total_interp_steps: 8
+total_interp_steps_train: 8
+is_T_fixed: true
+scratch_dir: /global/cfs/cdirs/m4633/puren/interp_dm/shanghai/shanghai.h5
+checkpoint_path: ''

@@ -1,0 +1,18 @@
+# Config for: python train_super_slomo.py --config config/shanghai/super_slomo.yaml
+run_name: SuperSloMo
+data_name: shanghai
+model: SuperSloMo
+sampling_freq: 5
+optimizer: adam
+epochs: 400
+batch_size: 32
+learning_rate: 1.0e-4
+checkpoint_path: ''
+total_interp_steps_train: 8
+is_T_fixed: true
+patch_size: 128
+stride: 32
+scratch_dir: /global/cfs/cdirs/m4633/puren/interp_dm/shanghai/shanghai.h5
+prediction_type: v
+sampler: ddim
+base_width: 128

@@ -1,0 +1,15 @@
+# Config for: python eval_super_slomo.py --config config/nskt/eval_super_slomo.yaml
+data_name: nskt
+model: SuperSloMo
+re_id: -1
+batch_size: 64
+patch_size: 256
+stride: 32
+optimizer: adam
+epochs: 200
+learning_rate: 6.0e-5
+total_interp_steps: 30 # 20
+total_interp_steps_train: 20
+is_T_fixed: true
+scratch_dir: /global/cfs/cdirs/m4633/foundationmodel/nskt_tensor/
+checkpoint_path: ''
