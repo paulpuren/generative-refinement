@@ -1,0 +1,19 @@
+# Core training dependencies
+numpy
+torch
+torchvision
+h5py
+opencv-python
+matplotlib
+cmocean
+diffusers
+wandb
+torch-ema
+einops
+pyyaml
+
+# Optional but commonly used in this repo (eval/analysis scripts)
+scipy
+seaborn
+tqdm
+lpips
